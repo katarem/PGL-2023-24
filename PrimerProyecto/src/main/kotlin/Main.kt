@@ -1,5 +1,4 @@
 import kotlin.system.exitProcess
-
 /*
 * Ejercicios para practicar Kotlin Cristian M. Espinosa Leal 2o DAM B
 *
@@ -101,16 +100,9 @@ fun ej10(input:String):Boolean{
     println("ej 10: ")
     return input.replace(" ","").reversed() == input.replace(" ","")
 }
+data class Telefono (var modelo: String, var marca: String, var precio :Int)
 
 fun main(args: Array<String>) {
-    println(ej1())
-    println(ej2())
-    println(ej3())
-    println(ej4())
-    println(ej5(arrayListOf(1,2,3,4,5,6,7,8,9)))
-    println(ej6(arrayListOf(9,8,7,6,5,4,3,2,1)))
-    println(ej7(arrayListOf("naranja","sandía","spaguetti", "sopa", "chocolate"), "sandía"))
-    println(ej8(arrayListOf(1,2,3,4,5,6,7,8,9,10)))
-    println(ej9(arrayListOf(2,2,2,2,2,2,2,2,2,2)))
-    println(ej10("ojo rojo"))
+    println( Cancion("prayer","metal",2002,100000))
 }
+
